@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
 
+body, ion-content {
+  font-family: 'League Spartan', sans-serif;
+}
 h1{
-    font-size: 22px;
     line-height:5px;
     padding-left:10px;
     color:#fff;
+    font-family: League Spartan;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+
 }
 .profile p{
     color:#898a8b;
@@ -12,8 +21,14 @@ h1{
 }
 
 h5{
-    padding-left:15px;
-    color:#c1c1c2;
+    padding-left:35px;
+    color:#FFFFFF;
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18.4px;
+    text-align: left;
+
 }
 .white-icons{
     color:#fff;
@@ -38,9 +53,10 @@ ion-content {
 }
 
 .weathericon{
-    font-size: 30px;
+    width:52px;
+    height:52px;
     padding-left:10px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 .weather-forcast p{
    padding-left:25px; 
