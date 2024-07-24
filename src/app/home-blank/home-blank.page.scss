@@ -1,0 +1,66 @@
+
+h1{
+    font-size: 22px;
+    line-height:5px;
+    padding-left:10px;
+    color:#fff;
+}
+.profile p{
+    color:#898a8b;
+    padding-left:10px;
+    font-size:14px;
+}
+
+h5{
+    padding-left:15px;
+    color:#c1c1c2;
+}
+.white-icons{
+    color:#fff;
+}
+ion-content {
+    --background: #17191b;
+}
+
+.headersection{
+    padding-top: 20px;
+    --background: #242629 !important;
+}
+.settingbtn{
+   --background: #434343 !important;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.icobgn{
+    --background:#434343 !important;
+}
+
+.weathericon{
+    font-size: 30px;
+    padding-left:10px;
+    margin-top: 25px;
+}
+.weather-forcast p{
+   padding-left:25px; 
+   color:#898a8b;
+}
+
+.devicesection{
+    margin-left:25%;
+}
+ion-card{
+    width: 170px;
+    height:160px;
+    --background: #242629;
+    --color: #fff;
+    margin-top: 40%;
+    border-radius: 20px;
+    text-align:center;
+}
+.addbtn{
+    --background:#434343 !important;
+    font-weight: bold;
+    margin-top: 20%;
+}

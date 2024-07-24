@@ -1,0 +1,53 @@
+
+<ion-content [fullscreen]="true">
+
+<div class="headersection" style="background: #242629;">
+    <div class="profile">
+      <ion-row>
+        <ion-col size="9">
+            <h1>John Doe</h1>
+            <p>johndoemail.com</p>
+        </ion-col>
+        <ion-col size="3">
+          <ion-button class="settingbtn" shape="round" [routerLink]="['/setting']">
+            <ion-icon class="white-icons"  name="settings-outline"> </ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </div> 
+
+    <div class="weather-forcast">
+      <ion-row>
+        <ion-col size="7">
+            <ion-icon class="weathericon white-icons"  name="settings-outline"> </ion-icon>
+        </ion-col>
+        <ion-col size="5">
+            <h5> <ion-icon class="white-icons" slot="icon-only" name="location-outline"></ion-icon> Richmond</h5>
+            <p>27'C . 79%</p>
+        </ion-col>
+      </ion-row>
+    </div> 
+</div>
+
+  <ion-card>
+     <ion-row>
+        <ion-col size="2">
+          <img class="itemimg" src="assets/images/air-conditionar.png">
+        </ion-col>
+        <ion-col size="10">
+            <h5 class="item"> BedRoom AC</h5>
+            <p class="itemdtl"> Daikin AXRTOO82AR </p>
+        </ion-col>
+      </ion-row>
+  </ion-card> 
+
+
+<div class="devicesection">
+    <ion-button class="addbtn" shape="round" [routerLink]="['/pairing-one']"> 
+      <ion-icon class="white-icons" slot="icon-only" name="add-outline"></ion-icon>
+    </ion-button>
+</div>
+
+
+
+</ion-content>

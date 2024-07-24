@@ -1,0 +1,32 @@
+
+<ion-content [fullscreen]="true">
+
+<div class="devicesection">
+    <h1>Select your AC</h1>
+    <h6>Some informative text</h6>
+</div>
+
+  <div class="ioninput">
+
+    <ion-select shape="round" justify="end" placeholder="Select Brand" >
+      <ion-select-option> LG </ion-select-option>
+      <ion-select-option> SONY </ion-select-option>
+      <ion-select-option> WALTON </ion-select-option>
+    </ion-select>    
+
+    <ion-select shape="round" justify="end" placeholder="Remote Model" >
+      <ion-select-option> LG-84623 </ion-select-option>
+      <ion-select-option> SONY-98929 </ion-select-option>
+      <ion-select-option> WALTON-87382 </ion-select-option>
+    </ion-select>
+
+  </div>
+
+  <h6 class="modeltext">See how to find remote model number</h6>
+
+  <ion-button class="nextbtn" expand="full" shape="round" [routerLink]="['/test-remote']"> Next
+    <ion-icon class="white-icons" slot="end" name="chevron-forward-outline"></ion-icon>
+  </ion-button>
+
+
+</ion-content>

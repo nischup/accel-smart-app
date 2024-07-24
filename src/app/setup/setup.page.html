@@ -1,0 +1,34 @@
+
+<ion-content [fullscreen]="true">
+
+<div class="devicesection">
+    <h1>Set your comfort zone</h1>
+    <h6>Some informative text</h6>
+</div>
+
+<div class="devicesection">
+    <ion-card>
+        <ion-button class="addbtn" shape="round" [routerLink]="['/home-device-added']"> <ion-icon class="white-icons" slot="icon-only" name="add-outline"></ion-icon></ion-button> <span class="card-text"> Set preferred temperatures range </span>
+      <ion-card-content>
+        <div class="bar">
+          <ion-progress-bar class="progressbar" value="0.0" buffer="0.7"></ion-progress-bar>
+        </div>
+    </ion-card-content>
+  </ion-card>    
+
+  <ion-card>
+        <ion-button class="addbtn" shape="round" [routerLink]="['/home-device-added']"> <ion-icon class="white-icons" slot="icon-only" name="location-outline"></ion-icon></ion-button> <span class="card-text"> Set preferred humidity range </span>
+      <ion-card-content>
+        <div class="bar">
+          <ion-progress-bar class="progressbar" value="0.0" buffer="0.4"></ion-progress-bar>
+      </div>
+    </ion-card-content>
+  </ion-card>   
+</div>
+
+  <ion-button class="nextbtn" expand="full" shape="round" [routerLink]="['/select-ac']"> Next
+    <ion-icon class="white-icons" slot="end" name="chevron-forward-outline"></ion-icon>
+  </ion-button>
+
+
+</ion-content>

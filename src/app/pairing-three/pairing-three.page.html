@@ -1,0 +1,28 @@
+
+<ion-content [fullscreen]="true">
+
+<div class="headersection">
+    <ion-row>
+      <ion-col size="11"></ion-col>
+      <ion-col size="1">
+          <ion-icon class="blueicon white-icons"  name="settings-outline"> </ion-icon>
+      </ion-col>
+    </ion-row>
+</div>
+
+<div class="devicesection">
+    <h1>Connecting Device</h1>
+    <h6>Current Status / information</h6>
+</div>
+
+  <div class="ioninput">
+    <ion-input placeholder="  Wi-Fi SSID " shape="round">  </ion-input> <br>
+    <ion-input placeholder="  Wi-Fi Password" shape="round">  </ion-input>
+  </div>
+
+  <ion-button class="nextbtn" expand="full" shape="round" [routerLink]="['/pairing-four']"> Next
+    <ion-icon class="white-icons" slot="end" name="chevron-forward-outline"></ion-icon>
+  </ion-button>
+
+
+</ion-content>

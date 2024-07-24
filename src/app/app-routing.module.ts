@@ -8,8 +8,64 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'login-password',
+    loadChildren: () => import('./login-password/login-password.module').then( m => m.LoginPasswordPageModule)
+  },
+  {
+    path: 'login-new-password',
+    loadChildren: () => import('./login-new-password/login-new-password.module').then( m => m.LoginNewPasswordPageModule)
+  },
+  {
+    path: 'home-blank',
+    loadChildren: () => import('./home-blank/home-blank.module').then( m => m.HomeBlankPageModule)
+  },
+  {
+    path: 'home-device-added',
+    loadChildren: () => import('./home-device-added/home-device-added.module').then( m => m.HomeDeviceAddedPageModule)
+  },
+  {
+    path: 'pairing-one',
+    loadChildren: () => import('./pairing-one/pairing-one.module').then( m => m.PairingOnePageModule)
+  },
+  {
+    path: 'pairing-two',
+    loadChildren: () => import('./pairing-two/pairing-two.module').then( m => m.PairingTwoPageModule)
+  },
+  {
+    path: 'pairing-three',
+    loadChildren: () => import('./pairing-three/pairing-three.module').then( m => m.PairingThreePageModule)
+  },
+  {
+    path: 'pairing-four',
+    loadChildren: () => import('./pairing-four/pairing-four.module').then( m => m.PairingFourPageModule)
+  },
+  {
+    path: 'pairing-five',
+    loadChildren: () => import('./pairing-five/pairing-five.module').then( m => m.PairingFivePageModule)
+  },
+  {
+    path: 'setup',
+    loadChildren: () => import('./setup/setup.module').then( m => m.SetupPageModule)
+  },
+  {
+    path: 'select-ac',
+    loadChildren: () => import('./select-ac/select-ac.module').then( m => m.SelectAcPageModule)
+  },
+  {
+    path: 'test-remote',
+    loadChildren: () => import('./test-remote/test-remote.module').then( m => m.TestRemotePageModule)
+  },
+  {
+    path: 'setting',
+    loadChildren: () => import('./setting/setting.module').then( m => m.SettingPageModule)
   },
 ];
 

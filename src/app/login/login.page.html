@@ -1,0 +1,25 @@
+
+<ion-content [fullscreen]="true">
+
+  <h3>accel smart</h3>
+  <h1>Let's make your <br> AC smart today</h1>
+
+  <div class="ioninput">
+    <ion-input placeholder="  Enter your email " shape="round">  </ion-input>
+  </div>
+
+    <ion-button class="nextbtn" shape="round" [routerLink]="['/login-password']"> Next <ion-icon class="white-icons" slot="end" name="chevron-forward-outline"></ion-icon></ion-button>
+
+    <div class="google-sign">
+      <div class="ortext"> Or </div>
+      <ion-button class="signbtn" shape="round" expand="full"> Signin with Google </ion-button>
+      <div class="privacy-policy">
+        <p>
+          By signing in you are agreeing to our <span class="prvtext"> Privacy Policy </span> <br> 
+          and <span class="trmtext">Terms & Conditions</span>
+        </p>
+      </div>
+    </div>
+ 
+
+</ion-content>
