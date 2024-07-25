@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+
   <ion-toolbar class="black-toolbar">
     <ion-buttons slot="start">
       <ion-back-button class="white-icons" defaultHref="/"></ion-back-button>
@@ -18,7 +18,7 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
-</ion-header>
+
 
 
 
@@ -39,20 +39,31 @@
   <div id="container">
 
    <div class="temp-controller">
+    <div class="half-circle-wrapper">
       <circle-progress
         [percent]="temperaturePercent"
         [radius]="100"
         [outerStrokeWidth]="8"
-        [innerStrokeWidth]="16"
+        [space]="4"
+        [innerStrokeWidth]="32"
         [outerStrokeColor]="'#7B7B7B'"
         [innerStrokeColor]="'#7B7B7B'"
+        [subtitle]="'26°C indoor'"
+        [title]="'24°C'"
+        [titleColor]="'#FFFFFF'"
+        [subtitleColor]="'#D9D9D9'"
+        [titleFontSize]="'35'"
+        [titleFontWeight]="'500'"
+        [unitsFontSize]="'0'"
         [animation]="true"
         [animationDuration]="300"
+        [clockwise]="false"
       ></circle-progress>
+  </div>
       <div class="temp-display">
         <h2>{{ temperature }}°C</h2>
       </div>
-    </div>
+  </div>
 
 <ion-card>
 
