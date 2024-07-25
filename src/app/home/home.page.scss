@@ -98,10 +98,40 @@ ion-content{
   color: #B2B2B2;
 }
 
-ion-card{
+ion-card {
   --background: #242629 !important;
   border-radius: 30px;
+}
 
+ion-card-header {
+  --background: #242629 !important;
+}
+
+ion-card-content {
+  --background: #242629 !important;
+  padding-top: 30px;
+}
+
+/* Style the ion-tab-button */
+ion-tab-button {
+  --background: transparent !important; /* Set the tab button background to transparent */
+}
+
+/* Style the button inside ion-tab-button */
+ion-tab-button button.nextbtn {
+  background-color: #791878 !important; /* Background color of the button */
+  color: white !important; /* Text color of the button */
+  text-transform: none;
+  padding: 15px;
+  height: 75px;
+  border-radius: 20px; /* Adjust border radius as per your design */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-tab-button button.nextbtn ion-icon {
+  margin-right: 8px; /* Adjust icon margin if needed */
 }
 
 .temp-controller {

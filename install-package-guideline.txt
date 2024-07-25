@@ -1,3 +1,5 @@
 npm i ng-circle-progress
 npm install ng-circle-progress --save
 npm install @capacitor/android
+
+circle doc: https://bootsoon.github.io/ng-circle-progress/
