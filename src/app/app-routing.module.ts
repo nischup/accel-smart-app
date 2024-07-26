@@ -67,6 +67,22 @@ const routes: Routes = [
     path: 'setting',
     loadChildren: () => import('./setting/setting.module').then( m => m.SettingPageModule)
   },
+  {
+    path: 'remote-control-cool',
+    loadChildren: () => import('./remote-control-cool/remote-control-cool.module').then( m => m.RemoteControlCoolPageModule)
+  },
+  {
+    path: 'remote-control-dry',
+    loadChildren: () => import('./remote-control-dry/remote-control-dry.module').then( m => m.RemoteControlDryPageModule)
+  },
+  {
+    path: 'remote-control-heat',
+    loadChildren: () => import('./remote-control-heat/remote-control-heat.module').then( m => m.RemoteControlHeatPageModule)
+  },
+  {
+    path: 'remote-control-coolwith-ai',
+    loadChildren: () => import('./remote-control-coolwith-ai/remote-control-coolwith-ai.module').then( m => m.RemoteControlCoolwithAiPageModule)
+  },
 ];
 
 @NgModule({

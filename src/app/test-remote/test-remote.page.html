@@ -9,14 +9,14 @@
   <h5>Did the AC turn on?</h5>
 
   <div class="circlebtn">
-    <ion-button class="nextbtn" shape="round" [routerLink]="['/test-remote']">
-      <ion-icon class="officon white-icons" name="person-circle-outline"></ion-icon>
+    <ion-button class="offcirclebtn" shape="round" [routerLink]="['/test-remote']">
+      <ion-icon class="officon white-icons" src="assets/svgicon/swichofficon.svg"></ion-icon>
     </ion-button>
   </div>
 
      <div class="btnarea">
-      <ion-button class="ai-button" shape="round">  No  </ion-button>  
-      <ion-button class="offbtn" shape="round">  Yes </ion-button> 
+       <ion-button class="ai-button" shape="round">No</ion-button> 
+      <ion-button class="offbtn" shape="round" [routerLink]="['/remote-control-coolwith-ai']">  Yes </ion-button> 
     </div>
 
 

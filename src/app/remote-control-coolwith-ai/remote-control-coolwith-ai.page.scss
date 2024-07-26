@@ -10,8 +10,6 @@ body, ion-content {
   --background: #191A1B !important;
   left: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 #container strong {
@@ -104,42 +102,6 @@ ion-content{
   color: #B2B2B2;
 }
 
-ion-card {
-  --background: #242629 !important;
-  border-radius: 30px;
-  margin-top: 50px;
-}
-
-ion-card-header {
-  --background: #242629 !important;
-}
-
-ion-card-content {
-  --background: #242629 !important;
-  padding-top: 30px;
-}
-
-
-ion-tab-button {
-  --background: transparent !important; 
-}
-
-ion-tab-button button.nextbtn {
-  background-color: #791878 !important;
-  color: white !important; 
-  text-transform: none;
-  padding: 15px;
-  height: 75px;
-  border-radius: 20px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-ion-tab-button button.nextbtn ion-icon {
-  margin-right: 8px; 
-}
-
 .temp-display {
   font-family: League Spartan;
   font-size: 15px;
@@ -164,6 +126,89 @@ ion-tab-button button.nextbtn ion-icon {
   width: 268px; 
   height: 190px; 
   overflow: hidden;
+}
+
+.aitext{
+  margin-top: 50px;
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18.4px;
+  text-align: center;
+  color: #92E34A;
+}
+
+.aitxtico{
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
+}
+
+.savetxt h5{
+  font-family: League Spartan;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.swingbtn{
+/*  height:55px;*/
+  margin-bottom:5%;
+  --background: #242629 !important;
+  text-transform: none;
+  width: 353pxpx;
+  height: 72px;
+  left: 19px;
+  gap: 1px;
+  border-radius: 32px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+
+}
+
+.ai-button {
+  width: 214px; 
+  height: 62px;  
+  gap: 4px; 
+  border-radius: 90px;  
+  --background: linear-gradient(90deg, #386D09 0%, #065043 100%); 
+  border: 3px solid #C8FF97;
+  color: #bef58f !important;
+  text-transform: none;
+  margin-right: 10px;
+}
+.gradientbg {
+    background: linear-gradient(360deg, #386D09 0%, #065043 30%, #17191b 98%);
+}
+
+
+.offbtn{
+  width:123px;
+  height:62px;
+  padding: 20px 4px 20px 4px;
+  gap: 8px;
+  --background: #C25555 !important;
+  padding-left: 10px;
+  font-weight:bold;
+}
+
+.onoffbtn{
+  width:60px;
+  height:5px !important;
+  margin-left:55%;
+ --background: #72b238 !important;
+}
+
+.officonbtn{
+ --background: #141212 !important;
+  margin-right: 8px;
+}
+
+.btnarea{
+  height: 300px;
+  margin-top: 90px;
 }
 
 

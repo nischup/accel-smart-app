@@ -1,0 +1,81 @@
+<ion-toolbar class="black-toolbar">
+  <ion-buttons slot="start">
+    <ion-back-button class="white-icons" defaultHref="/"></ion-back-button>
+  </ion-buttons>    
+  <ion-title></ion-title>
+  <ion-buttons slot="end">
+    <ion-button>
+      <ion-icon class="headericon" src="assets/svgicon/locationicon.svg"></ion-icon>
+    </ion-button>
+    <ion-button>
+      <ion-icon class="headericon" src="assets/svgicon/clockicon.svg"></ion-icon>
+    </ion-button>
+    <ion-button [routerLink]="['/setting']">
+       <ion-icon class="headericon" src="assets/svgicon/setting-icon.svg"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <div class="bedroom-ac-section">
+    <div class="bedroom-ac-left">
+     <img src="assets/images/air-conditionar.png" alt="Air Conditioner">
+      <div>
+        <span class="item">Bedroom AC</span>
+        <span class="item-dtl">Daikin AXRT0082AR</span>
+      </div>
+    </div>
+    <div class="bedroom-ac-right">
+      <ion-icon class="white-icons" name="chevron-down-outline"></ion-icon>
+    </div>
+  </div>
+
+<div id="container">
+    <div class="temp-display">
+      <span>{{ temperature }}°C OUTDOOR</span>
+    </div>
+  <div class="temp-controller">
+      <div class="half-circle-wrapper">
+          <circle-progress
+            [percent]="temperaturePercent"
+            [radius]="130"
+            [outerStrokeWidth]="8"
+            [space]="6"
+            [innerStrokeWidth]="32"
+            [outerStrokeColor]="'#7AC737'"
+            [innerStrokeColor]="'#3B5623'"
+            [subtitle]="'26°C indoor'"
+            [title]="'24°C'"
+            [titleColor]="'#FFFFFF'"
+            [subtitleColor]="'#D9D9D9'"
+            [titleFontSize]="'48'"
+            [subtitleFontSize]="'15'"
+            [titleFontWeight]="'500'"
+            [unitsFontSize]="'0'"
+            [animation]="true"
+            [animationDuration]="300"
+            [clockwise]="false"
+          ></circle-progress>
+      </div>
+    </div>
+
+    <div class="gradientbg">
+        <div class="aitext"> <ion-icon class="aitxtico" src="assets/svgicon/aitxticon.svg"></ion-icon> Ai Mode Activated</div>
+
+        <div class="savetxt">
+          <h5>Saved 25wt today</h5>
+        </div>
+
+         <div class="btnarea">
+          <ion-button class="swingbtn" expand="full" shape="round">V. Swing <ion-button shape="round" class="onoffbtn"> ON </ion-button> </ion-button>
+
+          <ion-button class="ai-button" shape="round"> <ion-icon slot="end" class="white-icons" slot="icon-only" name="location-outline"></ion-icon> Turn Off  </ion-button>  
+
+          <ion-button class="offbtn" shape="round"> <ion-button class="officonbtn" shape="round"> <ion-icon class="white-icons" slot="icon-only" name="time-outline"></ion-icon> </ion-button>  OFF </ion-button> 
+        </div>
+    </div>
+
+</div>
+
+</ion-content>
+
