@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RemoteControlDryPageRoutingModule } from './remote-control-dry-routing.module';
 
 import { RemoteControlDryPage } from './remote-control-dry.page';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RemoteControlDryPageRoutingModule
+    RemoteControlDryPageRoutingModule,
+    NgCircleProgressModule
   ],
   declarations: [RemoteControlDryPage]
 })

@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+body, ion-content {
+  font-family: 'League Spartan', sans-serif;
+}
+
+#container {
+  text-align: center;
+  position: absolute;
+  --background: #191A1B !important;
+  left: 0;
+  right: 0;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+ion-content{
+  --background: #17191b !important;
+}
+
+.black-toolbar {
+  --background: #242629 !important;
+}
+
+.white-icons {
+  color: white !important;
+  font-size: 18px;
+}
+
+.headericon{
+  height: 28px;
+  width: 28px;
+}
+
+.bedroom-ac-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #242629; 
+  margin-bottom: 20px; 
+}
+
+.bedroom-ac-left {
+  display: flex;
+  align-items: center;
+}
+
+.bedroom-ac-left ion-icon {
+  margin-right: 8px;
+}
+
+.bedroom-ac-left div {
+  display: flex;
+  flex-direction: column;
+}
+
+.bedroom-ac-left div span {
+  display: block;
+}
+
+.bedroom-ac-right {
+  display: flex;
+  align-items: center;
+}
+
+.bedroom-ac-left img {
+  width: 38px;
+  height: 39px;
+  margin-right: 8px; 
+  opacity: 0.8;
+}
+
+.itemname{
+  font-family: League Spartan;
+  font-size: 20px !important;
+  font-weight: 500;
+  line-height: 18.4px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: -32px;
+}
+
+.item-dtl{
+  font-family: League Spartan;
+  font-size: 16px !important;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  color: #B2B2B2;
+}
+
+.temp-display {
+  font-family: League Spartan;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 13.8px;
+  text-align: center; 
+  color: #F37368;
+  margin-left: 180px;
+  margin-top: 20px;
+}
+
+.temp-controller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 60px;
+}
+
+.half-circle-wrapper {
+  position: relative;
+  width: 268px; 
+  height: 190px; 
+  overflow: hidden;
+}
+
+.aitext{
+  margin-top: 50px;
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18.4px;
+  text-align: center;
+  color: #92E34A;
+}
+
+.aitxtico{
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
+}
+
+.savetxt h5{
+  font-family: League Spartan;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+.ai-button {
+  width: 214px; 
+  height: 62px;  
+  gap: 4px; 
+  border-radius: 90px;  
+  --background: linear-gradient(90deg, #79FF00 0%, #00FFFF 100%); 
+  border: 3px solid #C8FF97;
+  color: #bef58f !important;
+  text-transform: none;
+  margin-right: 5x;
+}
+
+.ai-button-off {
+  width: 123px; 
+  height: 62px;  
+  gap: 4px; 
+  border-radius: 90px;  
+  --background: #C25555 !important; 
+  color: #bef58f !important;
+  text-transform: none;
+  padding-right: -5px;
+}
+
+.aiofftxt{
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18.4px;
+  text-align: center;
+  color: #17191B;
+;
+}
+
+.offtxt{
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18.4px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.gradientbg {
+    background: linear-gradient(360deg, #386D09 0%, #065043 30%, #17191b 98%);
+}
+
+.onoffbtn{
+  width:65px !important;
+  height:32px !important;
+  margin-left:55%;
+ --background: #72b238 !important;
+}
+
+
+.officonbtn{
+ --background: #141212 !important;
+  color: #FFFFFF !important;
+  margin-right: 8px;
+}
+
+.btnarea{
+  height: 300px;
+  margin-top: 20px;
+}
+
+ion-card {
+  --background: #242629 !important;
+  border-radius: 30px;
+  margin-top: 50px;
+  width:353px;
+  height:180px;
+  border: 1px 0px 0px 0px;
+   margin-left: 20px;
+}
+
+.ioncardheader{
+  height: 60px;
+}
+
+ion-tab-bar{
+  --background: #242629 !important;
+  border-bottom: 1px solid#000;
+}
+
+ion-card-header {
+  --background: #242629 !important;
+}
+
+ion-card-content {
+  --background: #242629 !important;
+  padding-top: 10px;
+}
+
+ion-list{
+   --background: #242629 !important;
+    color: #FFFFFF;
+    border-bottom: 1px solid#000;
+}
+ion-item{
+   --background: #242629 !important;
+   color: #FFFFFF;
+}
+
+ion-tab-button button.coolbtn {
+  background: none;
+  color: #63676F !important; 
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 56px;
+  border-radius: 90px;
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18.4px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.coolicon{
+  padding-right:4px;
+}
+ion-tab-button button.drybtn {
+  background: none;
+  color:#63676F !important; 
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 56px;
+  border-radius: 90px;
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18.4px;
+  text-align: center;
+  margin-bottom: 4px;
+/*  padding-right: 10px;*/
+}
+.dryicon{
+  padding-right:4px;
+}
+ion-tab-button button.heatbtn {
+ background-color: #791878 !important;
+  color:#FFFFFF !important; 
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 112.33px;
+  height: 56px;
+  border-radius: 90px;
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18.4px;
+  text-align: center;
+  margin-bottom: 4px;
+/*  padding-right: 10px;*/
+}
+.heaticon{
+  padding-right:4px;
+}
+.itemlabeltext{
+  font-family: League Spartan;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18.4px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.chevroniconbtn{
+  height: 35px;
+  width: 35px;
+  border-radius: 20px;
+  background-color:#555555 !important;
+}
+.chevronicontxt{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+}
+
+
+
+
+

@@ -1,13 +1,118 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>remote-control-cool</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar class="black-toolbar">
+  <ion-buttons slot="start">
+    <ion-back-button class="white-icons" defaultHref="/"></ion-back-button>
+  </ion-buttons>    
+  <ion-title></ion-title>
+  <ion-buttons slot="end">
+    <ion-button>
+      <ion-icon class="headericon" src="assets/svgicon/locationicon.svg"></ion-icon>
+    </ion-button>
+    <ion-button>
+      <ion-icon class="headericon" src="assets/svgicon/clockicon.svg"></ion-icon>
+    </ion-button>
+    <ion-button [routerLink]="['/setting']">
+       <ion-icon class="headericon" src="assets/svgicon/setting-icon.svg"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">remote-control-cool</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="bedroom-ac-section">
+    <div class="bedroom-ac-left">
+     <img src="assets/images/air-conditionar.png" alt="Air Conditioner">
+      <div>
+        <span class="itemname">Bedroom AC</span>
+        <span class="item-dtl">Daikin AXRT0082AR</span>
+      </div>
+    </div>
+    <div class="bedroom-ac-right">
+      <ion-icon class="white-icons" name="chevron-down-outline"></ion-icon>
+    </div>
+  </div>
+
+<div id="container">
+    <div class="temp-display">
+      <span>{{ temperature }}°C OUTDOOR</span>
+    </div>
+  <div class="temp-controller">
+      <div class="half-circle-wrapper">
+          <circle-progress
+            [percent]="temperaturePercent"
+            [radius]="130"
+            [outerStrokeWidth]="10"
+            [space]="6"
+            [innerStrokeWidth]="32"
+            [outerStrokeColor]="'#2555FF'"
+            [innerStrokeColor]="'#2D5690'"
+            [subtitle]="'26°C indoor'"
+            [title]="'24°C'"
+            [titleColor]="'#FFFFFF'"
+            [subtitleColor]="'#D9D9D9'"
+            [titleFontSize]="'48'"
+            [subtitleFontSize]="'15'"
+            [titleFontWeight]="'500'"
+            [unitsFontSize]="'0'"
+            [animation]="true"
+            [animationDuration]="300"
+            [clockwise]="false"
+          ></circle-progress>
+      </div>
+    </div>
+
+
+<ion-card>
+  <ion-card-header class="ioncardheader">
+    <ion-tabs class="iontabs">
+    <ion-tab-bar slot="bottom" class="iontabbar">
+        <ion-tab-button tab="cool">
+          <button class="coolbtn" shape="round" [routerLink]="['/remote-control-cool']">
+            <ion-icon class="coolicon" src="assets/svgicon/cooliconwhite.svg"></ion-icon>
+            Cool
+          </button>
+        </ion-tab-button>
+      <ion-tab-button tab="dry">
+          <button class="drybtn" shape="round" [routerLink]="['/remote-control-dry']">
+            <ion-icon class="dryicon" src="assets/svgicon/dryicon.svg"></ion-icon>
+            Dry
+          </button>
+        </ion-tab-button>
+       <ion-tab-button tab="heat">
+          <button class="heatbtn" shape="round" [routerLink]="['/remote-control-heat']">
+            <ion-icon class="heaticon" src="assets/svgicon/heaticon.svg"></ion-icon>
+            Heat
+          </button>
+        </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  </ion-card-header>
+  
+  <ion-card-content>
+      <ion-item>
+        <ion-label class="itemlabeltext">V. Swing</ion-label> <ion-toggle class="onoffbtn" slot="end" color="success" checked> </ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="itemlabeltext">Fan Speed</ion-label>
+        <button class="chevroniconbtn" shape="round">
+          <ion-icon class="white-icons" slot="end" name="chevron-back-outline"></ion-icon>
+        </button> 
+          <span class="chevronicontxt"> Auto </span>
+        <button class="chevroniconbtn" shape="round">
+          <ion-icon class="white-icons" slot="end" name="chevron-forward-outline"></ion-icon>
+        </button>
+      </ion-item>
+  </ion-card-content>
+</ion-card>
+
+
+   <div class="btnarea">
+    <ion-button class="ai-button" shape="round" [routerLink]="['/remote-control-coolwith-ai']"> <ion-icon slot="end" class="white-icons" slot="icon-only" src="assets/svgicon/ai-icon.svg"></ion-icon> <span class="aiofftxt">Ai Mode </span></ion-button>           
+
+    <ion-button class="ai-button-off" shape="round"> <ion-button class="officonbtn" shape="round"> <ion-icon class="white-icons" slot="icon-only" src="assets/svgicon/swichofficon.svg"></ion-icon> </ion-button> <span class="offtxt">OFF</span> </ion-button>  
+  </div>
+
+
+</div>
+
 </ion-content>
+

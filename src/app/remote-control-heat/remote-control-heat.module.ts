@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RemoteControlHeatPageRoutingModule } from './remote-control-heat-routing.module';
 
 import { RemoteControlHeatPage } from './remote-control-heat.page';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RemoteControlHeatPageRoutingModule
+    RemoteControlHeatPageRoutingModule,
+    NgCircleProgressModule
   ],
   declarations: [RemoteControlHeatPage]
 })

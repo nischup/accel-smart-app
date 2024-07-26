@@ -154,16 +154,15 @@ ion-content{
 }
 
 .swingbtn{
-/*  height:55px;*/
   margin-bottom:5%;
   --background: #242629 !important;
   text-transform: none;
-  width: 353pxpx;
+  width: 353px;
   height: 72px;
-  left: 19px;
+/*  left: 19px;*/
   gap: 1px;
-  border-radius: 32px 0px 0px 0px;
-  border: 1px 0px 0px 0px;
+  padding-left: 20px;
+/*  padding-right: 10px;*/
   opacity: 0px;
 
 }
@@ -177,32 +176,53 @@ ion-content{
   border: 3px solid #C8FF97;
   color: #bef58f !important;
   text-transform: none;
-  margin-right: 10px;
+  margin-right: 5x;
 }
+
+.ai-button-off {
+  width: 123px; 
+  height: 62px;  
+  gap: 4px; 
+  border-radius: 90px;  
+  --background: #C25555 !important; 
+  color: #bef58f !important;
+  text-transform: none;
+  padding-right: -5px;
+}
+
+.aiofftxt{
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18.4px;
+  text-align: center;
+  color: #C8FF97;
+}
+
+.offtxt{
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18.4px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 .gradientbg {
     background: linear-gradient(360deg, #386D09 0%, #065043 30%, #17191b 98%);
 }
 
-
-.offbtn{
-  width:123px;
-  height:62px;
-  padding: 20px 4px 20px 4px;
-  gap: 8px;
-  --background: #C25555 !important;
-  padding-left: 10px;
-  font-weight:bold;
-}
-
 .onoffbtn{
-  width:60px;
-  height:5px !important;
+  width:65px !important;
+  height:32px !important;
   margin-left:55%;
  --background: #72b238 !important;
 }
 
+
 .officonbtn{
  --background: #141212 !important;
+  color: #FFFFFF !important;
   margin-right: 8px;
 }
 
