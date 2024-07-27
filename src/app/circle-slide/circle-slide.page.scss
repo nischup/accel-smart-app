@@ -1,13 +1,10 @@
-/* home.page.scss */
-
-.circle {
-  width: 270px;
-  height: 270px;
-  border: 10px solid grey;
-  background-color: black;
-  border-radius: 50%;
+.circular-slider {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 20px auto;
+  align-items: center;
+  height: 100vh;
+}
+
+#knob {
+  cursor: pointer;
 }
