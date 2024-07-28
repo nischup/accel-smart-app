@@ -1,15 +1,18 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Circle Slide</ion-title>
+    <ion-title>circle-slide</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="circular-slider">
-    <svg width="200" height="200" viewBox="0 0 200 200">
-      <circle cx="100" cy="100" r="80" stroke="lightgrey" stroke-width="10" fill="none"/>
-      <circle cx="100" cy="100" r="80" stroke="blue" stroke-width="10" fill="none" stroke-dasharray="502" stroke-dashoffset="0"/>
-      <circle #knob cx="100" cy="20" r="10" fill="red" draggable="true"/>
-    </svg>
-  </div>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">circle-slide</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<svg width="500" height="500">
+  <circle id="draggableCircle" cx="100" cy="100" r="50" stroke="black" stroke-width="3" fill="red" />
+</svg>
+
 </ion-content>
