@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'test-remote',
+    redirectTo: 'circle-slide',
     pathMatch: 'full'
   },
   {
@@ -82,7 +82,8 @@ const routes: Routes = [
   {
     path: 'remote-control-coolwith-ai',
     loadChildren: () => import('./remote-control-coolwith-ai/remote-control-coolwith-ai.module').then( m => m.RemoteControlCoolwithAiPageModule)
-  },  {
+  },
+  {
     path: 'circle-slide',
     loadChildren: () => import('./circle-slide/circle-slide.module').then( m => m.CircleSlidePageModule)
   },

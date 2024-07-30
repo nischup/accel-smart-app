@@ -159,12 +159,6 @@ ion-tab-button button.nextbtn ion-icon {
   height: 100%;
 }
 
-.half-circle-wrapper {
-  position: relative;
-  width: 268px; 
-  height: 190px; 
-  overflow: hidden;
-}
 
 .temperature-control {
   width: 300px;
@@ -173,6 +167,14 @@ ion-tab-button button.nextbtn ion-icon {
   user-select: none; /* Prevent text selection during dragging */
   cursor: pointer;   /* Indicate draggable area */
 }
+
+.half-circle-wrapper {
+  position: relative;
+  width: 268px; 
+  height: 190px; 
+  overflow: hidden;
+}
+
 
 
 
