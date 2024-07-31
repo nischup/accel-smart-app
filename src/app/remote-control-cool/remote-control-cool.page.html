@@ -31,42 +31,21 @@
   </div>
 
 <div id="container">
-    <div class="temp-display">
-      <span>{{ temperature }}°C OUTDOOR</span>
-    </div>
-
-   
-      <img src="assets/svg/circleslidercool.svg">
-
-<!--     
-  <div class="temp-controller">
-
-
-       <div class="half-circle-wrapper">
-          <circle-progress
-            [percent]="temperaturePercent"
-            [radius]="130"
-            [outerStrokeWidth]="10"
-            [space]="6"
-            [innerStrokeWidth]="32"
-            [outerStrokeColor]="'#2555FF'"
-            [innerStrokeColor]="'#2D5690'"
-            [subtitle]="'26°C indoor'"
-            [title]="'24°C'"
-            [titleColor]="'#FFFFFF'"
-            [subtitleColor]="'#D9D9D9'"
-            [titleFontSize]="'48'"
-            [subtitleFontSize]="'15'"
-            [titleFontWeight]="'500'"
-            [unitsFontSize]="'0'"
-            [animation]="true"
-            [animationDuration]="300"
-            [clockwise]="false"
-          ></circle-progress>
-      </div> 
-
-
-    </div> -->
+  <div class="temp-display-section">
+    <ion-row class="temp-display">
+      <ion-col size="9">
+        <span class="outdoor-temp">{{ temperature }}°C OUTDOOR</span>
+        <h1> {{ temperature }}°C </h1>
+        <h6> {{ temperature + 2 }}°C indoor </h6>
+      </ion-col>
+      <ion-col size="3">
+        <ion-icon class="arrowup" src="assets/svgicon/uparrow.svg" (click)="increaseTemperature(); animateIcon($event)">
+        </ion-icon>
+        <ion-icon class="arrowdown" src="assets/svgicon/downarrow.svg" (click)="decreaseTemperature(); animateIcon($event)">
+      </ion-icon>
+      </ion-col>
+    </ion-row>
+  </div>
 
 
 <ion-card>
@@ -100,16 +79,18 @@
         <ion-label class="itemlabeltext">V. Swing</ion-label> <ion-toggle class="onoffbtn" slot="end" color="success" checked> </ion-toggle>
       </ion-item>
 
-      <ion-item>
-        <ion-label class="itemlabeltext">Fan Speed</ion-label>
-        <button class="chevroniconbtn" shape="round">
-          <ion-icon class="white-icons" slot="end" name="chevron-back-outline"></ion-icon>
-        </button> 
-          <span class="chevronicontxt"> Auto </span>
-        <button class="chevroniconbtn" shape="round">
-          <ion-icon class="white-icons" slot="end" name="chevron-forward-outline"></ion-icon>
-        </button>
-      </ion-item>
+  <ion-item>
+    <ion-label class="itemlabeltext">Fan Speed</ion-label>
+    <button class="chevroniconbtn" shape="round" (click)="previousFanSpeed()">
+      <ion-icon class="white-icons" slot="end" name="chevron-back-outline"></ion-icon>
+    </button> 
+    <span class="chevronicontxt" #fanSpeedText>{{ fanSpeed }}</span>
+    <button class="chevroniconbtn" shape="round" (click)="nextFanSpeed()">
+      <ion-icon class="white-icons" slot="end" name="chevron-forward-outline"></ion-icon>
+    </button>
+  </ion-item>
+
+
   </ion-card-content>
 </ion-card>
 

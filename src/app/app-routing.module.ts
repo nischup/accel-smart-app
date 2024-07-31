@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'circle-slide',
+    redirectTo: 'test-remote',
     pathMatch: 'full'
   },
   {

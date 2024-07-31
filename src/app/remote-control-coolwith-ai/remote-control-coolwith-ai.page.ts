@@ -8,17 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class RemoteControlCoolwithAiPage implements OnInit {
 
   temperature: number = 25;
-  temperaturePercent: number = 0; // Initialize the property
 
-  constructor() { 
-    this.updateTemperaturePercent();
+  constructor() { }
+
+  ngOnInit() { }
+
+  increaseTemperature() {
+    if (this.temperature < 30) { // Assuming maximum temperature is 30
+      this.temperature++;
+    }
   }
 
-  ngOnInit() {}
-
-  updateTemperaturePercent() {
-    // Assuming the temperature range is between 15 and 30 degrees
-    this.temperaturePercent = ((this.temperature - 15) / 15) * 100;
+  decreaseTemperature() {
+    if (this.temperature > 15) { // Assuming minimum temperature is 15
+      this.temperature--;
+    }
   }
 
 }

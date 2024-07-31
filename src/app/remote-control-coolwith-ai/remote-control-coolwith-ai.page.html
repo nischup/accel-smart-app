@@ -31,36 +31,21 @@
   </div>
 
 <div id="container">
-    <div class="temp-display">
-      <span>{{ temperature }}°C OUTDOOR</span>
-    </div>
 
-    <img src="assets/svg/circlesliderai.svg">
+   <div class="temp-display-section">
+    <ion-row class="temp-display">
+      <ion-col size="9">
+        <span class="outdoor-temp">{{ temperature }}°C OUTDOOR</span>
+        <h1>{{ temperature }}°C</h1>
+        <h6>{{ temperature + 2 }}°C indoor</h6>
+      </ion-col>
+      <ion-col size="3">
+        <ion-icon class="arrowup" src="assets/svgicon/uparrow.svg" (click)="increaseTemperature()"></ion-icon>
+        <ion-icon class="arrowdown" src="assets/svgicon/downarrow.svg" (click)="decreaseTemperature()"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </div>
 
-<!--   <div class="temp-controller">
-      <div class="half-circle-wrapper">
-          <circle-progress
-            [percent]="temperaturePercent"
-            [radius]="130"
-            [outerStrokeWidth]="8"
-            [space]="6"
-            [innerStrokeWidth]="32"
-            [outerStrokeColor]="'#7AC737'"
-            [innerStrokeColor]="'#3B5623'"
-            [subtitle]="'26°C indoor'"
-            [title]="'24°C'"
-            [titleColor]="'#FFFFFF'"
-            [subtitleColor]="'#D9D9D9'"
-            [titleFontSize]="'48'"
-            [subtitleFontSize]="'15'"
-            [titleFontWeight]="'500'"
-            [unitsFontSize]="'0'"
-            [animation]="true"
-            [animationDuration]="300"
-            [clockwise]="false"
-          ></circle-progress>
-      </div>
-    </div> -->
 
     <div class="gradientbg">
         <div class="aitext"> <ion-icon class="aitxtico" src="assets/svgicon/aitxticon.svg"></ion-icon> Ai Mode Activated</div>

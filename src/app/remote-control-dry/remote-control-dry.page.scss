@@ -103,31 +103,84 @@ ion-content{
   color: #B2B2B2;
 }
 
+.temp-display-section{
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
 .temp-display {
+  width: 248px;
+  height: 161px;
+  top: 252px;
+  margin-left: 50px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.outdoor-temp{
   font-family: League Spartan;
   font-size: 15px;
   font-weight: 400;
   line-height: 13.8px;
-  text-align: center; 
+  text-align: center;
   color: #F37368;
-  margin-left: 180px;
-  margin-top: 20px;
 }
 
-.temp-controller {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  margin-bottom: 60px;
+h1{
+  font-family: League Spartan;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 58.88px;
+  text-align: left;
+  color: #FFFFFF;
+  margin-left: 30px;
+}
+h6{
+  font-family: League Spartan;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 13.8px;
+  text-align: left;
+  color: #D9D9D9;
+  margin-left: 30px;
 }
 
-.half-circle-wrapper {
-  position: relative;
-  width: 268px; 
-  height: 190px; 
-  overflow: hidden;
+.arrowup{
+  width: 40px;
+  height: 40px;
+  top: 252px;
+  left: 250px;
+  padding: 0px 18px 0px 18px;
+  gap: 0px;
+  opacity: 0px;
+}
+.arrowdown{
+  width: 40px;
+  height: 40px;
+  margin-top: 55px;
+  left: 250px;
+  padding: 0px 18px 0px 18px;
+  gap: 0px;
+  opacity: 0px;
+}
+.arrowup, .arrowdown {
+  transition: transform 0.3s ease; 
+}
+.animate-icon {
+  transform: scale(1.2); 
+}
+
+.chevronicontxt {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
 }
 
 .aitext{
