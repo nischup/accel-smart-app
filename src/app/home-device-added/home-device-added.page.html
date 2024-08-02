@@ -1,29 +1,27 @@
 
 <ion-content [fullscreen]="true">
 
-<div class="headersection" style="background: #242629;">
+<div class="headersection">
     <div class="profile">
       <ion-row>
         <ion-col size="9">
             <h1>John Doe</h1>
-            <p>johndoemail.com</p>
+            <p>johndoe&#64;email.com</p>
         </ion-col>
         <ion-col size="3">
-          <ion-button class="settingbtn" shape="round" [routerLink]="['/setting']">
-            <ion-icon class="white-icons"  name="settings-outline"> </ion-icon>
-          </ion-button>
+             <ion-button class="settingbtn" shape="round" [routerLink]="['/setting']"> <ion-icon class="white-icons" slot="icon-only" name="settings-outline"></ion-icon></ion-button>
         </ion-col>
       </ion-row>
     </div> 
 
     <div class="weather-forcast">
       <ion-row>
-        <ion-col size="7">
-            <ion-icon class="weathericon white-icons"  name="settings-outline"> </ion-icon>
+        <ion-col size="6">
+            <ion-icon class="weathericon white-icons"  src="assets/svgicon/weather.svg"> </ion-icon>
         </ion-col>
-        <ion-col size="5">
-            <h5> <ion-icon class="white-icons" slot="icon-only" name="location-outline"></ion-icon> Richmond</h5>
-            <p>27'C . 79%</p>
+        <ion-col size="6">
+            <h4> <ion-icon class="white-icons" slot="icon-only" name="location-outline"></ion-icon> Richmond</h4>
+            <p class="wp"> <ion-icon class="white-icons"  src="assets/svgicon/temperature.svg"> </ion-icon> 27°C . <ion-icon class="white-icons"  src="assets/svgicon/humidity.svg"> </ion-icon> 79%</p>
         </ion-col>
       </ion-row>
     </div> 

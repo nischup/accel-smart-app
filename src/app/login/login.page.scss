@@ -4,13 +4,13 @@ body, ion-content {
   font-family: 'League Spartan', sans-serif;
 }
 .accelimg{
-    padding-left:20px;
+    margin-left:20px;
     color:#7b1879;
     font-size:17px;
     margin-top: 70px;
 }
 h1{
-    padding-left:20px;
+    margin-left:20px;
     color: #FFFFFF;
     font-family: League Spartan;
     font-weight:600;
@@ -20,27 +20,40 @@ h1{
 ion-content {
     --background: #17191b;
 }
-
-ion-input {
- width:340px;
- height:50px;
- color:#63676F;
- --background: #242629 !important; 
+.ioninput {
+  margin-top: 50px;
 }
-
-.ioninput{
-    margin-top: 50px;
-    padding-left:15px;
-    padding-right:15px;
+.inputbtn {
+  width: 353px;
+  height: 58px;
+  border-radius: 90px 90px 90px 90px; 
+  padding: 20px 24px; 
+  background-color: #242629; 
+  color: #63676F; 
+  border: 1px solid #2D323A; 
+  margin-left:20px;
+  --padding-start: 20px;
+}
+ion-input {
+  --background: transparent !important; // Make the background transparent to avoid overriding
+  --padding-start: 0px;
+  --padding-end: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  color: inherit; // Inherit color from .inputbtn
+  text-transform: none;
+  width: 100%; // Ensure the input fills the button
+  height: 100%; // Ensure the input fills the button
 }
 
 .nextbtn{
- width:117px;
- height: 75px;
+ width:135px;
+ height: 80px;
  padding:15px;
   font-family: League Spartan;
  --background: #791878 !important;
  text-transform: none;
+ margin-left: 10px;
 }
 
 .google-sign{
@@ -63,6 +76,7 @@ ion-input {
     height: 58px;
     radius: 90px;
     gap: 10px;
+    margin-left: 20px;
     padding:16px, 24px, 16px, 24px;
     --background: #242629;
     text-transform:none;

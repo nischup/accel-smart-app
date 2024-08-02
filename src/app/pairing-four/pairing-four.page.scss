@@ -1,18 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+body, ion-content {
+  font-family: 'League Spartan', sans-serif;
+}
 
 h1{
-    font-size: 20px;
-    line-height:15px;
     padding-left:10px;
-    color:#cb5858;
-    text-align:center;
-    font-weight:bold;
+    color: #C25555;
+    font-family: 'League Spartan';
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 42px;
 }
 h6{
     font-size: 11px;
     line-height:5px;
     padding-left:10px;
-    color:#8a8b8b;
+    color:#B2B2B2;
     text-align:center;
+    font-family: League Spartan;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+
+}
+.devicesection{
+    text-align: center;
 }
 .blueicon{
     margin-top:15px;
@@ -24,24 +37,83 @@ h6{
 ion-content {
     --background: #17191b;
 }
-.devicesection{
-    margin-top: 120px;
+.headersection{
+    margin-top: 30px;
     --background: #242629 !important;
 }
 .nextbtn{
-    --background:#791878 !important;
+    width: 353px;
+    --background: #791878 !important;
     text-transform:none;
     padding:15px;
-    height: 75px;
-    margin-top:50%;
+    height: 83px;
+    margin-top:440px;
+    margin-left: 20px;
 }
-.circlesection{
-    margin-top:50%;
+.circlesection {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: -50px;
 }
-.circleimg{
-    margin-top:30px;
+.circleone, .circletwo, .circlethree {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #2C2E30;
+  animation: animateBorder 3s linear infinite;
 }
-.midcircle{
-    
+.circleone {
+  width: 332px;
+  height: 332px;
+  top: 50px;
+  left: 31px;
+  opacity: 0.4;
+}
+.circletwo {
+  width: 238px;
+  height: 238px;
+  top: 50px;
+  left: 48px;
 }
 
+.circlethree {
+  width: 144px;
+  height: 144px;
+  margin-left: 50px;
+  margin-top: 50px;
+  background: radial-gradient(50% 50% at 50% 50%, #191A1B 0%, #242627 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleimg {
+  position: absolute;
+  bottom: 0; /* Aligns the image at the bottom of the circle */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensures the image is below the crossmark */
+  height: 50px; /* Adjust as needed */
+  width: 50px; /* Adjust as needed */
+}
+
+.crossmark {
+  position: absolute;
+  margin-top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+  font-size: 24px; /* Adjust the icon size as needed */
+  color: #fff; /* Customize the icon color */
+  z-index: 2; /* Ensures the crossmark is on top of the image */
+}
+/* Keyframes for border animation */
+@keyframes animateBorder {
+  0% {
+    border-color: #2C2E30;
+  }
+  50% {
+    border-color: #C25555;
+  }
+  100% {
+    border-color: #C25555;
+  }
+}

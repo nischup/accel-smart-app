@@ -1,17 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+body, ion-content {
+  font-family: 'League Spartan', sans-serif;
+}
 
 h1{
-    font-size: 20px;
-    line-height:15px;
     padding-left:10px;
-    color:#f5f5f5;
-    text-align:center;
+    color:#FFFFFF;
+    font-family: 'League Spartan';
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 42px;
 }
 h6{
     font-size: 11px;
     line-height:5px;
     padding-left:10px;
-    color:#8a8b8b;
+    color:#B2B2B2;
     text-align:center;
+    font-family: League Spartan;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+
+}
+.devicesection{
+    text-align: center;
 }
 .blueicon{
     margin-top:15px;
@@ -27,26 +41,68 @@ ion-content {
     margin-top: 100px;
     --background: #242629 !important;
 }
+
 .nextbtn{
+    width: 353px;
     --background:#791878 !important;
     text-transform:none;
     padding:15px;
-    height: 75px;
-    margin-top:50%;
-}
-ion-input {
- color:#9ca1a9;
- --background: #242629 !important; 
- margin-bottom:-12px;
- font-size: 14px;
+    height: 83px;
+    margin-top:180px;
+    margin-left: 20px;
 }
 
-.ioninput{
-    padding-left:15px;
-    padding-right:15px;
-    margin-top: 100px;
+.ioninput {
+  margin-top: 250px;
 }
-.circleimg{
-    margin-top:30px;
-    margin-left:25px;
+.inputbtn {
+  width: 353px;
+  height: 58px;
+  border-radius: 90px 90px 90px 90px; 
+  padding: 20px 24px; 
+  background-color: #242629; 
+  color: #63676F; 
+  border: 1px solid #2D323A; 
+  margin-left:20px;
+  --padding-start: 20px;
+}
+ion-input {
+  --background: transparent !important; // Make the background transparent to avoid overriding
+  --padding-start: 0px;
+  --padding-end: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  color: inherit; // Inherit color from .inputbtn
+  text-transform: none;
+  width: 100%; // Ensure the input fills the button
+  height: 100%; // Ensure the input fills the button
+}
+
+.nextbtn{
+    width: 353px;
+    --background:#791878 !important;
+    text-transform:none;
+    padding:15px;
+    height: 83px;
+    margin-top:120px;
+    margin-left: 20px;
+}
+
+
+.midcircle {
+  width: 144px;
+  height: 144px;
+  margin-top: 50px;
+  position: absolute;
+  border-radius: 50%; /* Fully rounded corners */
+  border: 1px solid #2C2E30; /* Border color and width */
+  background: radial-gradient(50% 50% at 50% 50%, #191A1B 0%, #242627 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers the image inside the circle */
+}
+
+.circleimg {
+  height: 50px;
+  width: 50px;
 }

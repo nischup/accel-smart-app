@@ -11,14 +11,13 @@ h1{
     font-size: 34px;
     font-weight: 600;
     line-height: 42px;
-    text-align: left;
-
+    text-align: center;
 }
 h6{
     font-size: 12px;
     line-height:5px;
     padding-left:10px;
-    color:#8a8b8b;
+    color:#FFFFFF;
     text-align:center;
 }
 .blueicon{
@@ -44,21 +43,27 @@ ion-content {
 }
 .headersection{
     margin-top: 50px;
+    margin-bottom: -25px;;
     --background: #242629 !important;
 }
 .textsection{
-    padding:20px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top: -10px;
 }
 .textsection p{
     text-align:justify;
-    font-size:12px;
-    color:#5c5d5e;
+    font-family: League Spartan;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 15px;
+    color:#B2B2B2;
 }
 .nextbtn{
     --background:#791878 !important;
     text-transform:none;
      width: 353px;
-    height:58px;
+    height:88px;
     top: 711px;
     left: 20px;
     padding: 20px 24px 20px 24px;
@@ -66,26 +71,25 @@ ion-content {
     border-radius: 90px 0px 0px 0px;
     opacity: 0px;
 }
+.confirmcheck {
+  padding-left: 50px;
+  padding-right: 20px;
+  margin-top: 50px;
+  display: flex;
+}
+
 ion-checkbox {
-    /* border: 1px solid #c9bfbf; */
-    --background: #594747 !important;
-    box-sizing: border-box;
+  --background: #594747 !important;
+  box-sizing: border-box;
 }
 
-.chheckboxtext{
-    color:#5c5d5e;
-    font-size:14px; 
-    margin-left: 5px;
-
+.chheckboxtext {
+  color: #B2B2B2;
+  font-size: 14px;
+  margin-left: 10px;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
 }
 
-.paringnextbuttonfigma{
-    width: 353px;
-    height:58px;
-    top: 711px;
-    left: 20px;
-    padding: 20px 24px 20px 24px;
-    gap: 8px;
-    border-radius: 90px 0px 0px 0px;
-    opacity: 0px;
-}
