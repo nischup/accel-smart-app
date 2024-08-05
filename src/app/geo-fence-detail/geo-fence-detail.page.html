@@ -1,0 +1,48 @@
+<ion-toolbar class="black-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button class="white-icons" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    GEO Fence Details   
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+
+<form>
+  <div class="ioninput">
+    <ion-input class="inputbtn" placeholder="Add Title"></ion-input>
+    <ion-item class="inputbtn">
+        <ion-icon class="srcicon" name="search-outline" slot="start"></ion-icon>
+        <ion-input placeholder="Search for location"></ion-input>
+      </ion-item>
+  </div>
+
+  <h6 style="color: #FFFFFF; text-align: center; margin-top: 10px;"> Map Wil be appear here </h6>
+
+<ion-card>
+  <ion-card-header>
+      <ion-row>
+        <ion-col size="auto">
+          <ion-card-title class="cardtitle">Radius</ion-card-title>
+        </ion-col>
+        <ion-col></ion-col>
+        <ion-col size="auto" class="ion-text-end">
+          <ion-card-title class="cardtitle">2km</ion-card-title>
+        </ion-col>
+      </ion-row>
+  </ion-card-header>
+
+  <ion-card-content>
+    <div class="bar">
+      <ion-range id="single-range"  min="10" max="50" step="1" value="20"></ion-range> 
+    </div>
+    <span class="km1"> 10m </span> <span class="km2"> 2km </span> <span class="km3"> 50km </span>
+  </ion-card-content>
+</ion-card>
+
+
+    <ion-button class="nextbtn" expand="full" shape="round" [routerLink]="['/test-remote']"> Save
+      <ion-icon class="white-icons" slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-button>
+</form>
+
+</ion-content>

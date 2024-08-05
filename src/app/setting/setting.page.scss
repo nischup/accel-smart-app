@@ -1,11 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
 
+body, ion-content {
+  font-family: 'League Spartan', sans-serif;
+}
 ion-toolbar{
     --background: #242629;
     color:#d7d7d9;
+    font-family: League Spartan;
 }
 .white-icons{
-    color:#ffffff;
+    color: #B2B2B2;
+    width: 24px;
+    height: 24px;
 }
 ion-content {
     --background: #191a1b;
 }
+ion-item{
+    margin-top: 10px;
+    --background: #191a1b !important;
+}
+.custom-ion-item {
+  border-radius: 8px; 
+  margin: 8px 0; 
+}
+
+.label-with-subtext {
+  display: flex;
+  flex-direction: column;
+}
+.main-text {
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18.4px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.sub-text {  
+    margin-top: 4px;
+    font-family: League Spartan;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    color: #B2B2B2;
+}
+.iconbtn {
+    width: 42px;
+    height: 42px;
+    --background:#434343 !important;
+    font-weight: bold;
+    font-family: League Spartan;
+    margin-left: 5px;
+}
+
+.card-white-icons{
+    color: #B2B2B2;
+    width: 20px;
+    height: 16px;
+}
+
+ion-card {
+    margin-top: 100px !important;
+  --background: #242629; 
+   border-radius: 16px; 
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin: 20px; 
+}
+
+ion-card ion-item {
+    height: 35px;
+  --background: #242629 !important; 
+  --color: #B2B2B2; 
+  border-bottom: 1px solid#000;
+  font-family: League Spartan;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14.72px;
+  text-align: left;
+}
+ion-card ion-item:last-child {
+  border-bottom: none; 
+}
+.logout-header {
+    display: flex;
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18.4px;
+    align-items: center;
+    color: #C25555;
+    margin-top: 30px;
+}
+
+.logout-icons {
+  width: 24px; 
+  height: 24px;
+  margin-left: 8px; 
+}
+
+
+
+

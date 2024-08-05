@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+body, ion-content {
+  font-family: 'League Spartan', sans-serif;
+}
+ion-toolbar{
+    --background:#242629;
+    color: #FFFFFF;
+    font-family: League Spartan;
+}
+.white-icons{
+    color:#fff;
+}
+ion-content {
+    --background: #17191b;
+}

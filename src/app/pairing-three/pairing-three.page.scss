@@ -50,6 +50,7 @@ ion-content {
     height: 83px;
     margin-top:250px;
     margin-left: 20px;
+    color:#FFFFFF;
 }
 
 .ioninput {
@@ -60,7 +61,7 @@ ion-content {
 }
 
 .inputbtn {
-  width: 353px;
+  width: 345px !important;
   height: 58px;
   border-radius: 90px 90px 90px 90px; 
   padding: 0px 10px; 

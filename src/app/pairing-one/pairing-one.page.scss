@@ -60,16 +60,14 @@ ion-content {
     color:#B2B2B2;
 }
 .nextbtn{
+     width: 353px;
     --background:#791878 !important;
     text-transform:none;
-     width: 353px;
-    height:88px;
-    top: 711px;
-    left: 20px;
-    padding: 20px 24px 20px 24px;
-    gap: 8px;
-    border-radius: 90px 0px 0px 0px;
-    opacity: 0px;
+    padding:15px;
+    height: 83px;
+     top: 711px;
+    margin-left: 20px;
+    color:#FFFFFF;
 }
 .confirmcheck {
   padding-left: 50px;

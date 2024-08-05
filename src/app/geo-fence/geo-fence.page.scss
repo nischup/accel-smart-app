@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+body, ion-content {
+  font-family: 'League Spartan', sans-serif;
+}
+ion-toolbar{
+    --background:#242629;
+    color: #FFFFFF;
+    font-family: League Spartan;
+}
+.white-icons{
+    color:#fff;
+}
+ion-content {
+    --background: #17191b;
+}
+.settingbtn {
+    --background:#434343 !important;
+    font-weight: bold;
+    margin-top: 20%;
+    font-family: League Spartan;
+    margin-left: 20px;;
+}
+.devicesection{
+    margin-left:80%;
+    margin-top:80%;
+}
+.addbtn{
+    --background:#791878 !important;
+    font-weight: bold;
+    width: 56px;
+    height: 56px;
+    top: 744px;
+    left: 316px;
+    gap: 0px;
+    opacity: 0px;
+}
+ion-card{
+    --background: #242629;
+    margin-top: 5%;
+    border-radius: 15px;
+    text-align:center;
+    margin-bottom: -10px;
+}
+.cardbtn {
+    width: 32px;
+    height: 32px;
+    --background:#791878 !important;
+    font-weight: bold;
+    font-family: League Spartan;
+    margin-left: -130px;
+}
+.cardtitle{
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18.4px;
+    text-align: left;
+    margin-left: -45px;
+    --color: #FFFFFF;
+}
+.cardsubtitle{
+    font-family: League Spartan;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    color: #B2B2B2;
+    margin-left: -45px;
+}
+
+ion-card-content{
+    background: #2D3236;
+    height: 44px !important;
+}
+ion-card-content ion-button {
+  width: 85px;
+  text-transform: none;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.72px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.bordered-button {
+  border-right: 1px solid #000; /* Adds a 1px right border */
+}
+
+.bordered-button.no-border {
+  border-right: none; /* Removes the border from the last button */
+}
+
+.cardicons{
+    width: 20px;
+    height: 20px;
+    padding: 1.67px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+

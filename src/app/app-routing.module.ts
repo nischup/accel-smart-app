@@ -86,7 +86,19 @@ const routes: Routes = [
   {
     path: 'circle-slide',
     loadChildren: () => import('./circle-slide/circle-slide.module').then( m => m.CircleSlidePageModule)
+  },  {
+    path: 'geo-fence',
+    loadChildren: () => import('./geo-fence/geo-fence.module').then( m => m.GeoFencePageModule)
   },
+  {
+    path: 'geo-fence-detail',
+    loadChildren: () => import('./geo-fence-detail/geo-fence-detail.module').then( m => m.GeoFenceDetailPageModule)
+  },
+  {
+    path: 'schedule',
+    loadChildren: () => import('./schedule/schedule.module').then( m => m.SchedulePageModule)
+  },
+
 
 ];
 

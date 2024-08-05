@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+body, ion-content {
+  font-family: 'League Spartan', sans-serif;
+}
+
+ion-toolbar{
+    --background:#242629;
+    color: #FFFFFF;
+    font-family: League Spartan;
+}
+.white-icons{
+    color:#fff;
+}
+h1{
+    padding-left:10px;
+    color:#FFFFFF;
+    font-family: 'League Spartan';
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.devicesection{
+    text-align: center;
+     margin-top: 80px;
+}
+.white-icons{
+    color:#fff;
+}
+ion-content {
+    --background: #17191b;
+}
+
+
+.nextbtn{
+    width: 353px;
+    --background:#791878 !important;
+    text-transform:none;
+    padding:15px;
+    height: 83px;
+    margin-top:10px;
+    margin-left: 20px;
+    color:#FFFFFF;
+}
+
+.ioninput {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.inputbtn {
+  width: 345px !important;
+  height: 58px;
+  border-radius: 90px 90px 90px 90px; 
+  padding: 0px 10px; 
+  background-color: #242629; 
+  color: #63676F; 
+  border: 1px solid #2D323A; 
+  margin-left:20px;
+  --padding-start: 50px;
+}
+ion-input {
+  --background: transparent !important; 
+  --padding-start: 0px;
+  --padding-end: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  color: inherit; 
+  text-transform: none;
+  width: 100%; 
+  height: 100%; 
+}
+.inputbtn ion-icon {
+  position: absolute;
+  left: 10px;
+  font-size: 20px;
+  color: #FFFFFF; 
+}
+.inputbtn {
+  padding-left: 5px; 
+  width: 100%;
+  --background: transparent; 
+  --border-color: transparent; 
+}
+.cardtitle{
+    color:#767B81 !important;
+}
+
+ion-card{
+    --background: #242629;
+    margin-top: 70%;
+    border-radius: 15px;
+    text-align:center;
+    margin-bottom: -10px;
+}
+#single-range {
+  --knob-border-radius: 50%; 
+  --knob-background: #FFFFFF; /* Knob color */
+  --knob-box-shadow: none; /* Remove knob shadow */
+  --knob-size: 34px; /* Size of the knob */
+  --bar-height: 16px; /* Height of the range bar */
+  --bar-background: #56595C; /* Inactive bar color */
+  --bar-background-active:#791878; /* Active bar color */
+  --bar-border-radius: 12px; /* Rounded corners for the bar */
+  --height: 53px; /* Overall height including the bar and knob */
+  --pin-background: #FFFFFF; /* Background color of the value pin (if used) */
+  --pin-color: var(--ion-color-primary-contrast, #fff); /* Text color in the value pin */
+}
+
+.bar {
+  height: 53px; /* Match the container height to the range */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the range within the container */
+}
+
+.km1{float: left;}
+.km2{margin-left: 20px;}
+.km3{float: right;}

@@ -4,11 +4,11 @@
   </ion-buttons>    
   <ion-title></ion-title>
   <ion-buttons slot="end">
-    <ion-button>
+    <ion-button [routerLink]="['/geo-fence']">
       <ion-icon class="headericon" src="assets/svgicon/locationicon.svg"></ion-icon>
     </ion-button>
-    <ion-button>
-      <ion-icon class="headericon" src="assets/svgicon/clockicon.svg"></ion-icon>
+    <ion-button [routerLink]="['/schedule']">
+      <ion-icon  class="headericon" src="assets/svgicon/clockicon.svg"></ion-icon>
     </ion-button>
     <ion-button [routerLink]="['/setting']">
        <ion-icon class="headericon" src="assets/svgicon/setting-icon.svg"></ion-icon>

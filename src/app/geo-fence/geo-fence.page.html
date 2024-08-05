@@ -1,0 +1,74 @@
+<ion-toolbar class="black-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button class="white-icons" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    GEO Fence    
+</ion-toolbar>
+
+
+<ion-content [fullscreen]="true">
+
+<ion-card>
+ <ion-card-header>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="auto">
+         <ion-button class="cardbtn" shape="round"><ion-icon class="white-icons" slot="icon-only" src="assets/svgicon/locationsmicon.svg"></ion-icon></ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-card-title class="cardtitle">Home</ion-card-title>
+          <ion-card-subtitle class="cardsubtitle">38.582543, -76.977634</ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-header>
+
+<ion-card-content>
+  <ion-button fill="clear" class="bordered-button">
+    <ion-icon class="cardicons" slot="icon-only" src="assets/svgicon/stop.svg"></ion-icon> Stop
+  </ion-button>
+  <ion-button fill="clear" class="bordered-button">
+    <ion-icon class="cardicons" slot="icon-only" src="assets/svgicon/edit.svg"></ion-icon> Edit
+  </ion-button>
+  <ion-button fill="clear" class="bordered-button no-border">
+    <ion-icon class="cardicons" slot="icon-only" src="assets/svgicon/delete.svg"></ion-icon> Delete
+  </ion-button>
+</ion-card-content>
+</ion-card>
+
+<ion-card>
+ <ion-card-header>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="auto">
+         <ion-button class="cardbtn" shape="round"><ion-icon class="white-icons" slot="icon-only" src="assets/svgicon/locationsmicon.svg"></ion-icon></ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-card-title class="cardtitle">School</ion-card-title>
+          <ion-card-subtitle class="cardsubtitle">38.582543, -76.977634</ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-header>
+
+<ion-card-content>
+  <ion-button fill="clear" class="bordered-button">
+    <ion-icon class="cardicons" slot="icon-only" src="assets/svgicon/play.svg"></ion-icon> Activate
+  </ion-button>
+  <ion-button fill="clear" class="bordered-button">
+    <ion-icon class="cardicons" slot="icon-only" src="assets/svgicon/edit.svg"></ion-icon> Edit
+  </ion-button>
+  <ion-button fill="clear" class="bordered-button no-border">
+    <ion-icon class="cardicons" slot="icon-only" src="assets/svgicon/delete.svg"></ion-icon> Delete
+  </ion-button>
+</ion-card-content>
+</ion-card>
+
+
+<div class="devicesection">
+    <ion-button class="addbtn" shape="round" [routerLink]="['/geo-fence-detail']"> 
+      <ion-icon class="white-icons" slot="icon-only" name="add-outline"></ion-icon>
+    </ion-button>
+</div>
+
+</ion-content>

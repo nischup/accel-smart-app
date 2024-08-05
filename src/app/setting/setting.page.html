@@ -9,7 +9,91 @@
 
 <ion-content [fullscreen]="true">
 
- 
+<ion-item>
+  <ion-button class="iconbtn" shape="round" fill="clear" slot="start" [routerLink]="['/setting']"> <ion-icon class="white-icons" slot="icon-only" src="assets/svgicon/profileicon.svg"></ion-icon>
+  </ion-button>
+  
+  <ion-label class="label-with-subtext">
+    <div class="main-text">Profile</div>
+    <div class="sub-text">Name, Email, Phone & Password</div>
+  </ion-label>
+  
+  <ion-icon class="white-icons" src="assets/svgicon/chevron-right.svg" slot="end"></ion-icon>
+</ion-item>
+
+<ion-item>
+  <ion-button class="iconbtn" shape="round" fill="clear" slot="start" [routerLink]="['/setting']"> <ion-icon class="white-icons" slot="icon-only" src="assets/svgicon/tempunit.svg"></ion-icon>
+  </ion-button>
+   
+  <ion-label class="label-with-subtext">
+    <div class="main-text">Temperature Unit</div>
+    <div class="sub-text">Celsius (°C)</div>
+  </ion-label>
+  
+  <ion-icon class="white-icons" src="assets/svgicon/chevron-right.svg" slot="end"></ion-icon>
+</ion-item>
+
+<ion-item>
+  <ion-button class="iconbtn" shape="round" fill="clear" slot="start" [routerLink]="['/setting']"> <ion-icon class="white-icons" slot="icon-only" src="assets/svgicon/deviceunit.svg"></ion-icon>
+  </ion-button>
+  
+  <ion-label class="label-with-subtext">
+    <div class="main-text">Device Update</div>
+    <div class="sub-text">Firmware Status</div>
+  </ion-label>
+  
+  <ion-icon class="white-icons" src="assets/svgicon/chevron-right.svg" slot="end"></ion-icon>
+</ion-item>
+
+
+<ion-card>
+  <ion-card-content>
+
+    <ion-item>
+      <ion-label>About</ion-label>
+      <ion-icon class="card-white-icons" name="chevron-forward-outline"  slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Privacy Policy</ion-label>
+      <ion-icon class="card-white-icons" name="chevron-forward-outline"  slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Device Certification</ion-label>
+      <ion-icon class="card-white-icons" name="chevron-forward-outline"  slot="end"></ion-icon>
+    </ion-item> 
+
+    <ion-item>
+      <ion-label>Help</ion-label>
+      <ion-icon class="card-white-icons" name="chevron-forward-outline"  slot="end"></ion-icon>
+    </ion-item> 
+
+    <ion-item>
+      <ion-label>Support</ion-label>
+      <ion-icon class="card-white-icons" name="chevron-forward-outline"  slot="end"></ion-icon>
+    </ion-item>
+
+  </ion-card-content>
+</ion-card>
+
+<!-- <div class="logout">
+  <h1 class="logout-header">
+    Log Out
+    <ion-icon class="logout-icons" src="assets/svgicon/logout.svg" ></ion-icon>
+  </h1>
+</div> -->
+
+<ion-row>
+  <ion-col size="4"></ion-col>
+  <ion-col size="4">
+       <h1 class="logout-header" [routerLink]="['/login']">
+        Log Out
+        <ion-icon class="logout-icons" src="assets/svgicon/logout.svg" ></ion-icon>
+      </h1>
+  </ion-col>
+  <ion-col size="4"></ion-col>
+</ion-row>
 
 </ion-content>
 

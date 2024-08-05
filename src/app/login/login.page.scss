@@ -54,6 +54,7 @@ ion-input {
  --background: #791878 !important;
  text-transform: none;
  margin-left: 10px;
+ color: #FFFFFF;
 }
 
 .google-sign{
@@ -80,6 +81,7 @@ ion-input {
     padding:16px, 24px, 16px, 24px;
     --background: #242629;
     text-transform:none;
+    color: #FFFFFF;
 }
 .googlesignimg{
     height:24px;
@@ -112,4 +114,25 @@ ion-input {
 }
 .trmtext{
      color:#a5a2a2;
+}
+
+.btninput {
+  width: 305px;
+  height: 58px;
+  border-radius: 90px 90px 90px 90px; 
+  padding: 2px 2px; 
+  background-color: #242629; 
+  color: #63676F; 
+  border: 1px solid #2D323A; 
+  --padding-start: 20px;
+}
+.btnnext{
+ width:135px;
+ height: 80px;
+ padding:15px;
+  font-family: League Spartan;
+ --background: #791878 !important;
+ text-transform: none;
+ color: #FFFFFF;
+ margin-left: -15px;
 }
