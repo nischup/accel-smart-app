@@ -3,25 +3,43 @@
       <ion-back-button class="white-icons" defaultHref="/"></ion-back-button>
     </ion-buttons>
     Schedule    
+  <ion-buttons slot="end">
+    <ion-button class="tgbtn">
+    Daily <ion-toggle class="onoffbtn" slot="end" color="success"> </ion-toggle>
+    </ion-button>
+  </ion-buttons>
 </ion-toolbar>
 
 
 <ion-content [fullscreen]="true">
 
+<div class="weekdays">
+  <ion-button shape="round" class="eachdayf">Sun</ion-button>  
+  <ion-button shape="round" class="eachday">Mon</ion-button>  
+  <ion-button shape="round" class="eachday">Tue</ion-button>  
+  <ion-button shape="round" class="eachday">Wed</ion-button>  
+  <ion-button shape="round" class="eachday">Thu</ion-button>  
+  <ion-button shape="round" class="eachday">Fri</ion-button>  
+  <ion-button shape="round" class="eachdayl">Sat</ion-button>  
+</div>
+
 <ion-card>
- <ion-card-header>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="auto">
-         <ion-button class="cardbtn" shape="round"><ion-icon class="white-icons" slot="icon-only" src="assets/svgicon/locationsmicon.svg"></ion-icon></ion-button>
-        </ion-col>
-        <ion-col>
-          <ion-card-title class="cardtitle">Turn off</ion-card-title>
-          <ion-card-subtitle class="cardsubtitle">10:30 PM</ion-card-subtitle>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-card-header>
+<ion-card-header>
+  <ion-item lines="none">
+    <ion-label>
+      <span class="time-text"> Turn On </span><br> 
+      <span class="time-label">10:30 PM</span>
+    </ion-label>
+    <ion-icon class="card-white-icons" name="chevron-forward-outline" slot="end"></ion-icon>
+  </ion-item>  
+  <ion-item lines="none">
+    <ion-label>
+      <span class="time-text"> Turn Off </span><br> 
+      <span class="time-label">05:30 AM</span>
+    </ion-label>
+    <ion-icon class="card-white-icons" name="chevron-forward-outline" slot="end"></ion-icon>
+  </ion-item>
+</ion-card-header>
 
 <ion-card-content>
   <ion-button fill="clear" class="bordered-button">
@@ -35,7 +53,7 @@
 
 
 <div class="devicesection">
-    <ion-button class="addbtn" shape="round" [routerLink]="['/geo-fence-detail']"> 
+    <ion-button class="addbtn" shape="round" [routerLink]="['/schedule']"> 
       <ion-icon class="white-icons" slot="icon-only" name="add-outline"></ion-icon>
     </ion-button>
 </div>

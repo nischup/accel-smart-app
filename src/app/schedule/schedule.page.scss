@@ -23,7 +23,7 @@ ion-content {
 }
 .devicesection{
     margin-left:80%;
-    margin-top:80%;
+    margin-top:85%;
 }
 .addbtn{
     --background:#791878 !important;
@@ -84,7 +84,7 @@ ion-card-content ion-button {
 }
 
 .bordered-button {
-  border-right: 1px solid #000; /* Adds a 1px right border */
+  border-right: 1px solid #242629; /* Adds a 1px right border */
 }
 
 .bordered-button.no-border {
@@ -97,5 +97,118 @@ ion-card-content ion-button {
     gap: 0px;
     opacity: 0px;
 }
+.card-white-icons{
+    color: #B2B2B2;
+    width: 24px;
+    height: 24px;
+}
+ion-item{
+    margin-top: 10px;
+    --background: #242629 !important;
+}
+ion-card-header ion-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+}
+.time-text{
+  font-family: League Spartan;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #B2B2B2;
+}
+.time-label {
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18.4px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.tgbtn{
+  text-transform: none;
+  font-family: League Spartan;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.weekdays {
+  width: 393px;
+  height: 56px;
+  top: 113px;
+  background: #242629;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; /* Adds space between the buttons */
+  margin-left: -12px;
+}
+
+.eachday {
+  width: 40px !important;
+  height: 30px !important;
+  border-radius: 90px; /* Fully rounded corners */
+  --background:transparent !important;
+  border: 1px solid #63676F;
+  text-transform: none;
+  color: #ffffff; /* Text color */
+  font-size: 12px; /* Adjusted text size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}.eachdayf {
+  width: 35px !important;
+  height: 30px !important;
+  border-radius: 90px; /* Fully rounded corners */
+  --background:#791878 !important;
+  text-transform: none;
+  color: #ffffff; /* Text color */
+  font-size: 12px; /* Adjusted text size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}.eachdayl {
+  width: 35px !important;
+  height: 30px !important;
+  border-radius: 90px; /* Fully rounded corners */
+  --background:#791878 !important;
+  text-transform: none;
+  color: #ffffff; /* Text color */
+  font-size: 12px; /* Adjusted text size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.onoffbtn {
+  margin-left: 8px;
+  --track-background: #6b6565;
+  --track-background-checked: rgba(var(--ion-color-primary-rgb, 0, 84, 233), 0.5);
+  --border-radius: 14px;
+  --handle-background: #ffffff;
+  --handle-background-checked: var(--ion-color-primary, #0054e9);
+  --handle-border-radius: 50%;
+  --handle-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  --handle-max-height: calc(100% + 6px);
+  --handle-spacing: 0;
+  --handle-transition: transform 160ms cubic-bezier(0.4, 0, 0.2, 1), background-color 160ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+ion-toggle.onoffbtn::part(native) .toggle-icon {
+    width: 78px !important;
+    height: 20px !important;
+}
+.ion-color-success {
+    --ion-color-base: var(--ion-color-success, #2dd55b) !important;
+    --ion-color-base-rgb: var(--ion-color-success-rgb, 45, 213, 91) !important;
+    --ion-color-contrast: var(--ion-color-success-contrast, #000) !important;
+    --ion-color-contrast-rgb: var(--ion-color-success-contrast-rgb, 0, 0, 0) !important;
+    --ion-color-shade: var(--ion-color-success-shade, #28bb50) !important;
+    --ion-color-tint: var(--ion-color-success-tint, #42d96b) !important;
+}
+
+
+
 
 
