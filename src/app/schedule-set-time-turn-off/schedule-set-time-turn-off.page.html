@@ -38,29 +38,62 @@
     <ion-icon class="card-white-icons" name="chevron-forward-outline" slot="end"></ion-icon>
   </ion-item>
 </ion-card-header>
-
-<ion-card-content>
-  <ion-button fill="clear" class="bordered-button">
-    <ion-icon class="cardicons" slot="icon-only" src="assets/svgicon/stop.svg"></ion-icon> Stop
-  </ion-button>
-  <ion-button fill="clear" class="bordered-button no-border">
-    <ion-icon class="cardicons" slot="icon-only" src="assets/svgicon/delete.svg"></ion-icon> Delete
-  </ion-button>
-</ion-card-content>
 </ion-card>
 
 
-<div class="devicesection">
-    <ion-button class="addbtn" shape="round" [routerLink]="['/schedule-set-time-turn-on']"> 
-      <ion-icon class="white-icons" slot="icon-only" name="add-outline"></ion-icon>
-    </ion-button>
-</div>
+<ion-card>
+<ion-card-header>
+  <ion-title>Turn Off</ion-title> 
+</ion-card-header>
 
-<!-- <div class="devicesection">
-    <ion-button class="addbtn" shape="round" (click)="presentModal()"> 
-      <ion-icon class="white-icons" slot="icon-only" name="add-outline"></ion-icon>
-    </ion-button>
-</div>
- -->
+<ion-row>
+  <ion-col size="3">
+    <ion-input
+      class="inputbtn"
+      type="number"
+      [(ngModel)]="hour"
+      placeholder="HH"
+      min="1"
+      max="12"
+      maxlength="2"
+      inputmode="numeric"
+    ></ion-input>
+  </ion-col>
+
+  <ion-col size="3">
+    <ion-input
+      class="inputbtn"
+      type="number"
+      [(ngModel)]="minute"
+      placeholder="MM"
+      min="0"
+      max="59"
+      maxlength="2"
+      inputmode="numeric"
+    ></ion-input>
+  </ion-col>
+
+  <ion-col size="6">
+<ion-segment [(ngModel)]="timePeriod" mode="ios" class="custom-segment">
+  <ion-segment-button value="AM" class="am-button">
+    AM
+  </ion-segment-button>
+  <ion-segment-button value="PM" class="pm-button">
+    PM
+  </ion-segment-button>
+</ion-segment>
+
+
+  </ion-col>
+</ion-row>
+
+
+
+  <ion-button class="nextbtn" expand="full" shape="round" [routerLink]="['/schedule-set-time-turn-off']"> Update
+  </ion-button>
+
+</ion-card>
+
+
 </ion-content>
 

@@ -98,6 +98,14 @@ const routes: Routes = [
     path: 'schedule',
     loadChildren: () => import('./schedule/schedule.module').then( m => m.SchedulePageModule)
   },
+  {
+    path: 'schedule-set-time-turn-on',
+    loadChildren: () => import('./schedule-set-time-turn-on/schedule-set-time-turn-on.module').then( m => m.ScheduleSetTimeTurnOnPageModule)
+  },
+  {
+    path: 'schedule-set-time-turn-off',
+    loadChildren: () => import('./schedule-set-time-turn-off/schedule-set-time-turn-off.module').then( m => m.ScheduleSetTimeTurnOffPageModule)
+  },
 
 
 ];
