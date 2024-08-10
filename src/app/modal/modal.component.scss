@@ -74,49 +74,42 @@ ion-title{
 }
 
 ion-segment-button {
-  --background: #17191B !important; /* Default background color */
-  --color: #fff; /* Text color */
-  --color-checked: #fff; /* Text color when selected */
+  --background: #17191B !important; 
+  --color: #fff; 
+  --color-checked: #fff; 
   
-  /* Styles when the button is selected */
-  &.ion-activated {
-    --background: red; /* Background color when selected */
-    --indicator-color: red; /* Indicator color when selected */
-  }
-
-  /* Specific styling for AM and PM */
-  &.am-button.ion-activated,
-  &.pm-button.ion-activated {
-    --background: red; /* Background color when selected for AM/PM */
-    --indicator-color: red; /* Indicator color when selected */
-  }
+  // &.ion-activated {
+  //   --background: red; 
+  //   --indicator-color: red; 
+  // }
+  // &.am-button.ion-activated,
+  // &.pm-button.ion-activated {
+  //   --background: red; 
+  //   --indicator-color: red;
+  // }
 }
-
-/* Customize the indicator */
 .custom-segment {
-  width: 120px !important;
+  width: 125px !important;
   height: 58px;
   gap: 4px;
   margin-left:25px;
   border-radius: 90px 90px 90px 90px;
-
+  --background: #17191B !important; 
   ion-segment-button {
-    --background: green; /* Ensure default green background */
-    --color: #fff; /* Text color */
-    --indicator-color: grey !important; /* Default indicator color */
-    --indicator-border-radius: 90px 90px 90px 90px; /* Indicator border radius */
+    --background: green; 
+    --color: #fff;
+    --indicator-color: #63676F !important; 
+    --border-radius: 30px !important; 
     
-    &.ion-activated {
-      --background: red; /* When selected, change background to red */
-      --indicator-color: red; /* Change indicator color when selected */
-    }
+    // &.ion-activated {
+    //   --background: red; 
+    //   --indicator-color: red; 
+    // }
   }
-
-  /* Additional indicator styling */
-  --indicator-box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
-  --indicator-height: 100%;
-  --indicator-transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
-  --indicator-transform: none;
+  // --indicator-box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+  // --indicator-height: 100%;
+  // --indicator-transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  // --indicator-transform: none;
 }
 
 

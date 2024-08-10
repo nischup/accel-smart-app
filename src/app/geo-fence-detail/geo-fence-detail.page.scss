@@ -20,7 +20,6 @@ h1{
     font-weight: 600;
     line-height: 42px;
 }
-
 .devicesection{
     text-align: center;
      margin-top: 80px;
@@ -31,8 +30,6 @@ h1{
 ion-content {
     --background: #17191b;
 }
-
-
 .nextbtn{
     width: 353px;
     --background:#791878 !important;
@@ -43,21 +40,19 @@ ion-content {
     margin-left: 20px;
     color:#FFFFFF;
 }
-
 .ioninput {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 10px; 
 }
-
 .inputbtn {
   width: 345px !important;
   height: 58px;
   border-radius: 90px 90px 90px 90px; 
   padding: 0px 10px; 
   background-color: #242629; 
-  color: #63676F; 
+  color: #FFFFFF; 
   border: 1px solid #2D323A; 
   margin-left:20px;
   --padding-start: 50px;
@@ -88,7 +83,6 @@ ion-input {
 .cardtitle{
     color:#767B81 !important;
 }
-
 ion-card{
     --background: #242629;
     margin-top: 70%;
@@ -109,14 +103,12 @@ ion-card{
   --pin-background: #FFFFFF; /* Background color of the value pin (if used) */
   --pin-color: var(--ion-color-primary-contrast, #fff); /* Text color in the value pin */
 }
-
 .bar {
   height: 53px; /* Match the container height to the range */
   display: flex;
   align-items: center;
   justify-content: center; /* Center the range within the container */
 }
-
 .km1{float: left;}
 .km2{margin-left: 20px;}
 .km3{float: right;}
