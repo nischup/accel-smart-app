@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+body, ion-content {
+  font-family: 'League Spartan', sans-serif;
+}
+ion-toolbar{
+    --background:#242629;
+    color: #FFFFFF;
+    font-family: League Spartan;
+    font-size: 14px;
+}
+ion-content {
+    --background: #17191b;
+}
+ion-card{
+    --background: #242629;
+    margin-top: 5%;
+    border-radius: 15px;
+    text-align:center;
+    margin-bottom: -10px;
+}
+ion-card-content{
+    background: #2D3236;
+    height: 44px !important;
+}
+ion-card-content ion-button {
+  width: 150px;
+  text-transform: none;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.72px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.inputbtn {
+  width: 85px;
+  height: 56px;
+  border-radius: 90px 90px 90px 90px; 
+  background-color:#17191B; 
+  color: #FFFFFF; 
+  border: 1px solid #2D323A; 
+  margin-left:20px;
+  --padding-start: 20px;
+}
+ion-input {
+  --background: transparent !important; 
+  --padding-start: 0px;
+  --padding-end: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  color: inherit; 
+  text-transform: none;
+  width: 100%; 
+  height: 100%; 
+}
+ion-title{
+    font-family: League Spartan;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF !important;
+}
+.nextbtn{
+    width: 353px;
+    --background: #791878 !important;
+    text-transform:none;
+    padding:15px;
+    height: 83px;
+    text-align: center;
+    color:#FFFFFF;
+}
+
+ion-segment-button {
+  --background: #17191B !important; /* Default background color */
+  --color: #fff; /* Text color */
+  --color-checked: #fff; /* Text color when selected */
+  
+  /* Styles when the button is selected */
+  &.ion-activated {
+    --background: red; /* Background color when selected */
+    --indicator-color: red; /* Indicator color when selected */
+  }
+
+  /* Specific styling for AM and PM */
+  &.am-button.ion-activated,
+  &.pm-button.ion-activated {
+    --background: red; /* Background color when selected for AM/PM */
+    --indicator-color: red; /* Indicator color when selected */
+  }
+}
+
+/* Customize the indicator */
+.custom-segment {
+  width: 120px !important;
+  height: 58px;
+  gap: 4px;
+  margin-left:25px;
+  border-radius: 90px 90px 90px 90px;
+
+  ion-segment-button {
+    --background: green; /* Ensure default green background */
+    --color: #fff; /* Text color */
+    --indicator-color: grey !important; /* Default indicator color */
+    --indicator-border-radius: 90px 90px 90px 90px; /* Indicator border radius */
+    
+    &.ion-activated {
+      --background: red; /* When selected, change background to red */
+      --indicator-color: red; /* Change indicator color when selected */
+    }
+  }
+
+  /* Additional indicator styling */
+  --indicator-box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+  --indicator-height: 100%;
+  --indicator-transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  --indicator-transform: none;
+}
+
+
+
+
+
+
+

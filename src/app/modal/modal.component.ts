@@ -8,6 +8,10 @@ import { ModalController } from '@ionic/angular';
 })
 export class ModalComponent  implements OnInit {
 
+  hour: number | string = '';  
+  minute: number | string = ''; 
+  timePeriod: string = 'AM';  
+
   constructor(private modalController: ModalController) { }
 
   ngOnInit() {}
